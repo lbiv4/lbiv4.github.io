@@ -1,0 +1,23 @@
+a:link,
+a:visited {
+  color: #bc9810;
+}
+
+a:hover {
+  color: white;
+}
+
+body {
+  background-color: aqua;
+}
+
+nav {
+  background-color: #0f411c;
+  color: #bc9810;
+  height: 50px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}

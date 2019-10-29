@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"
+    ></script>
+    <title>Lane Barton's Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar-items"
+      ></button>
+      <div class="navbar-collapse collapse" id="navbar-items">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#aboutDiv">About Me</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="projectsDropdown"
+              href="#projectsDiv"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Projects</a
+            >
+            <div class="dropdown-menu" aria-labelledby="projectsDropdown">
+              <a class="dropdown-item" href="#">Battlecode</a
+              ><a class="dropdown-item" href="#">Fantasy Football</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactDiv">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="aboutDiv"><h1>About Me</h1></div>
+    <div id="projectsDiv"><h1>Projects</h1></div>
+    <div id="contactDiv"><h1>Contact Me</h1></div>
+  </body>
+</html>
