@@ -8,16 +8,32 @@ a:hover {
 }
 
 body {
-  background-color: aqua;
+  background-color: white;
+  font-size: 24px;
 }
 
 nav {
   background-color: #0f411c;
   color: #bc9810;
-  height: 50px;
+  height: 100%;
+  bottom: 0;
+  position: fixed;
+  width: 200px;
   padding: 10px;
 }
 
 h1 {
   text-align: center;
+}
+
+.contentDiv {
+  padding: 50px;
+}
+
+.nav {
+  height: 100%;
+}
+
+.photoRight {
+  float: right;
 }
