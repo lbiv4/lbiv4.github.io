@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./scripts.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -31,23 +32,31 @@
     <div id="mainDiv">
       <div id="sidebarDiv">
         <!-- Structure based on documentation at https://getbootstrap.com/docs/4.0/components/navs/#vertical-->
-        <ul class="nav flex-column">
+        <ul class="nav flex-column navPageList">
           <li class="nav-item">
-            <a class="nav-link active" href="./index.html">About Me</a>
+            <a class="nav-link navPageLink active" href="./index.html"
+              >About Me</a
+            >
             <div>
-              <ul class="nav flex-column navSubList d-none" aria-hidden="true">
+              <ul class="nav flex-column navSubList" aria-hidden="true">
                 <li class="">
-                  <a class="nav-link active" href="./index.html#aboutMe"
+                  <a
+                    class="nav-link navSubLink active"
+                    href="./index.html#aboutMe"
                     >Intro</a
                   >
                 </li>
                 <li class="">
-                  <a class="nav-link" href="./index.html#programmingBackground"
+                  <a
+                    class="nav-link navSubLink"
+                    href="./index.html#programmingBackground"
                     >Programming Background</a
                   >
                 </li>
                 <li class="">
-                  <a class="nav-link" href="./index.html#personalInterests"
+                  <a
+                    class="nav-link navSubLink"
+                    href="./index.html#personalInterests"
                     >Personal Interests</a
                   >
                 </li>
@@ -55,10 +64,10 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./projects.html">Projects</a>
+            <a class="nav-link navPageLink" href="./projects.html">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact Me</a>
+            <a class="nav-link navPageLink" href="./contact.html">Contact Me</a>
           </li>
         </ul>
       </div>

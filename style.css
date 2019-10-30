@@ -16,7 +16,7 @@ h1 {
   text-align: center;
 }
 
-.active {
+a.active {
   text-decoration: underline #bc9810;
 }
 
