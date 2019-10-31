@@ -19,6 +19,13 @@ h1 {
   color: #bc9810;
 }
 
+h3 {
+  width: fit-content;
+  padding: 10px;
+  background-color: #0f411c;
+  color: #bc9810;
+}
+
 a.active {
   text-decoration: underline #bc9810;
 }
