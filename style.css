@@ -1,0 +1,89 @@
+a:link,
+a:visited {
+  color: #bc9810;
+}
+
+a:hover {
+  color: white;
+}
+
+body {
+  background-color: white;
+  font-size: 24px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  background-color: #0f411c;
+  color: #bc9810;
+}
+
+h3 {
+  width: fit-content;
+  padding: 10px;
+  background-color: #0f411c;
+  color: #bc9810;
+}
+
+a.active {
+  text-decoration: underline #bc9810;
+}
+
+.navSubList {
+  padding-left: 25px;
+  font-size: 18px;
+}
+
+.photoLeft {
+  float: left;
+  margin: 10px 10px 10px 0px;
+}
+
+.photoRight {
+  float: right;
+  margin: 10px 0px 10px 10px;
+}
+
+#contactDiv {
+  text-align: center;
+}
+
+#contactForm {
+  margin: auto;
+  width: 80%;
+  padding: 25px;
+  border: 1px solid rgb(209, 207, 207);
+  border-radius: 0.3rem;
+}
+
+#contactSubmit {
+  background-color: #0f411c;
+  color: #bc9810;
+}
+
+#contactSubmit:hover {
+  color: white;
+}
+
+#contentDiv {
+  padding: 50px;
+  grid-area: 1 / 2;
+}
+
+#mainDiv {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+#sidebarDiv {
+  background-color: #0f411c;
+  color: #bc9810;
+  text-align: left;
+  height: 100%;
+  bottom: 0;
+  position: fixed;
+  width: 200px;
+  padding: 10px;
+  grid-area: 1 / 1;
+}

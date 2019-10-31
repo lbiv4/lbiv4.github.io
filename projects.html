@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <title>Lane Barton's Portfolio</title>
+  </head>
+  <body>
+    <div id="mainDiv">
+      <div id="sidebarDiv">
+        <!-- Structure based on documentation at https://getbootstrap.com/docs/4.0/components/navs/#vertical-->
+        <ul class="nav flex-column navPageList">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./projects.html">Projects</a>
+            <div>
+              <ul class="nav flex-column navSubList">
+                <li class="">
+                  <a
+                    class="nav-link navSubLink active"
+                    href="./projects.html#projectBattlecode"
+                    >Battlecode</a
+                  >
+                </li>
+                <li class="">
+                  <a class="nav-link navSubLink" href="#projectFantasyFootball"
+                    >Fantasy Football</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div id="contentDiv">
+        <div id="projectsDiv" class="contentDiv">
+          <div id="#projects">
+            <h1>Projects</h1>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              ex, neque architecto itaque explicabo laboriosam sapiente possimus
+              vero fugit. Nihil, quod omnis? Tempore, sint? Exercitationem minus
+              mollitia maxime adipisci. Ullam.
+            </p>
+            <div id="#projectBattlecode">
+              <h3>Battlecode</h3>
+              <image class="photoRight" src="./img/battlecode.gif" />
+              <br />
+              <p>
+                In winter of 2019 I got the opportunity to work on a team
+                project based around the annual
+                <a href="http://www.battlecode.org/">MIT Battlecode</a>
+                competition. The goal for the project was to iteratively design
+                a bot that would play a turn-based strategy game involving
+                mining resources and attacking enemy bases with different
+                classes of units. While my group did not enter the actual MIT
+                competition, our bot consistently placed top 3 in weekly
+                automated matches between teams in our class, culminating in a
+                2nd place finish to another excellent team.
+              </p>
+              <p>
+                Aside from the enjoyment of an interesting turn-based game, this
+                project helped motivate me to produce an excellent full-fledged
+                programming project. My team and I created numerous unit tests
+                that covered 70% and code and even introduced
+                <a
+                  href="https://github.com/CS554-software-engineering-groupProject/battlecodeProject/blob/master/UNITTESTING.md#mockbc19"
+                  >a mock framework</a
+                >
+                to simulate the game functionality to make debugging and testing
+                more accurate and precise. A CI pipeline through Travis and an
+                active Trello board helped smooth development and enhanced my
+                abilities to understand and implement a development project
+              </p>
+            </div>
+            <div id="#projectFantasyFootball">
+              <h3>Fantasy Football Projects</h3>
+              <br />
+              <p>
+                Persuant to my <a href="./index.htmlpersonalInterests">interests</a>, I have been the commissioner of a fantasy football league for over a decade.
+                With fantasy football being such a data-driven hobby, I naturally found lots of opportunities to leverage my love of the game with my passion for programming.
+              </p>
+              <image class="photoLeft" src="./img/fantasybot.png"></image>
+              <p>
+                 There have been two major projects I have implemented with regards to the fantasy football league I run. 
+                 The first was a database management project tasked with modeling league data and aggregating it in a Postgres database.
+                 Using that and a simple SQL-enabled front-end, I was able to produce incredibly interesting details regarding game-to-game results,
+                 long term trends on team scoring, and ranking systems for various team categories like win percentage or record in the playoffs.
+              </p>
+              <p>
+                While the database project served as a long-term tracking system, I also was interested in implementing a live, user-friendly experience for tracking current league proceedings.
+                As a result, I spent time setting up a framework for ESPN's fantasy football APIs and leveraging them to access data for my league. 
+                Along with the ability to gather league data at a moments notice, I work with the chat service Discord and created a bot that could take simple commands from users and output information.
+                At the current time this includes score updates for any year and week, injury updates for teams who are starting an injured player or player on a bye week, and some additional metrics on team's overall record.
+                This project is still being actively developed and can be found on <a href="https://github.com/lbiv4/fantasy-football-bot">GitHub</a>.
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
