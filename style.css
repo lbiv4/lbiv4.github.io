@@ -14,6 +14,9 @@ body {
 
 h1 {
   text-align: center;
+  padding: 10px;
+  background-color: #0f411c;
+  color: #bc9810;
 }
 
 a.active {
@@ -27,6 +30,27 @@ a.active {
 
 .photoRight {
   float: right;
+}
+
+#contactDiv {
+  text-align: center;
+}
+
+#contactForm {
+  margin: auto;
+  width: 80%;
+  padding: 25px;
+  border: 1px solid rgb(209, 207, 207);
+  border-radius: 0.3rem;
+}
+
+#contactSubmit {
+  background-color: #0f411c;
+  color: #bc9810;
+}
+
+#contactSubmit:hover {
+  color: white;
 }
 
 #contentDiv {
