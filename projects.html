@@ -31,7 +31,7 @@
     <div id="mainDiv">
       <div id="sidebarDiv">
         <!-- Structure based on documentation at https://getbootstrap.com/docs/4.0/components/navs/#vertical-->
-        <ul class="nav flex-column">
+        <ul class="nav flex-column navPageList">
           <li class="nav-item">
             <a class="nav-link" href="./index.html">About Me</a>
           </li>
@@ -41,13 +41,13 @@
               <ul class="nav flex-column navSubList">
                 <li class="">
                   <a
-                    class="nav-link active"
-                    href="./index.html#projectBattlecode"
+                    class="nav-link navSubLink active"
+                    href="./projects.html#projectBattlecode"
                     >Battlecode</a
                   >
                 </li>
                 <li class="">
-                  <a class="nav-link" href="./index.html#projectFantasyFootball"
+                  <a class="nav-link navSubLink" href="#projectFantasyFootball"
                     >Fantasy Football</a
                   >
                 </li>
@@ -72,6 +72,7 @@
             </p>
             <div id="#projectBattlecode">
               <h3>Battlecode</h3>
+              <image class="photoRight" src="./img/battlecode.gif" />
               <br />
               <p>
                 In winter of 2019 I got the opportunity to work on a team
@@ -104,11 +105,23 @@
               <h3>Fantasy Football Projects</h3>
               <br />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptate ex, neque architecto itaque explicabo laboriosam
-                sapiente possimus vero fugit. Nihil, quod omnis? Tempore, sint?
-                Exercitationem minus mollitia maxime adipisci. Ullam.
+                Persuant to my <a href="./index.htmlpersonalInterests">interests</a>, I have been the commissioner of a fantasy football league for over a decade.
+                With fantasy football being such a data-driven hobby, I naturally found lots of opportunities to leverage my love of the game with my passion for programming.
               </p>
+              <image class="photoLeft" src="./img/fantasybot.png"></image>
+              <p>
+                 There have been two major projects I have implemented with regards to the fantasy football league I run. 
+                 The first was a database management project tasked with modeling league data and aggregating it in a Postgres database.
+                 Using that and a simple SQL-enabled front-end, I was able to produce incredibly interesting details regarding game-to-game results,
+                 long term trends on team scoring, and ranking systems for various team categories like win percentage or record in the playoffs.
+              </p>
+              <p>
+                While the database project served as a long-term tracking system, I also was interested in implementing a live, user-friendly experience for tracking current league proceedings.
+                As a result, I spent time setting up a framework for ESPN's fantasy football APIs and leveraging them to access data for my league. 
+                Along with the ability to gather league data at a moments notice, I work with the chat service Discord and created a bot that could take simple commands from users and output information.
+                At the current time this includes score updates for any year and week, injury updates for teams who are starting an injured player or player on a bye week, and some additional metrics on team's overall record.
+                This project is still being actively developed and can be found on <a href="https://github.com/lbiv4/fantasy-football-bot">GitHub</a>.
+             </p>
             </div>
           </div>
         </div>

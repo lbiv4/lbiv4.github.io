@@ -35,8 +35,14 @@ a.active {
   font-size: 18px;
 }
 
+.photoLeft {
+  float: left;
+  margin: 10px 10px 10px 0px;
+}
+
 .photoRight {
   float: right;
+  margin: 10px 0px 10px 10px;
 }
 
 #contactDiv {
