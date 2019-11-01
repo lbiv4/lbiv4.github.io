@@ -4,7 +4,7 @@ a:visited {
 }
 
 a:hover {
-  color: white;
+  color: lightgray;
 }
 
 body {
@@ -21,6 +21,7 @@ h1 {
 
 h3 {
   width: fit-content;
+  display: inline-block;
   padding: 10px;
   background-color: #0f411c;
   color: #bc9810;
@@ -42,15 +43,19 @@ a.active {
 
 .photoRight {
   float: right;
+  display: inline;
   margin: 10px 0px 10px 10px;
 }
 
-#contactDiv {
+#contactMe,
+#contactMe > h3 {
   text-align: center;
+  float: center;
 }
 
 #contactForm {
   margin: auto;
+  text-align: left;
   width: 80%;
   padding: 25px;
   border: 1px solid rgb(209, 207, 207);
