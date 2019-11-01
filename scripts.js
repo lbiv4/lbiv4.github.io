@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", () => {
     for (let i = 0; i < subLinks.length; i++) {
       let divId = subLinks.item(i).attributes["href"].value.split("#")[1];
-      let subLink = document.getElementById("#" + divId);
+      let subLink = document.getElementById(divId);
       let linkTop = subLink.getBoundingClientRect().top;
       if (linkTop >= 0 && linkTop < 100) {
         changeActive("a.navSubLink.active", subLinks.item(i));
@@ -33,8 +33,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //Functionality for resizing images when screen shrinks. Not accounting for vertical shrink at this time
   window.addEventListener("resize", () => {
-    const sidebarWidth = document.getElementById("sidebarDiv").offsetWidth;
-    const midWidth = (window.innerWidth - sidebarWidth) / 2;
+    const content = $("#contentDiv");
+    const contentWidth =
+      parseInt(content.css("width")) -
+      parseInt(content.css("padding-left")) -
+      parseInt(content.css("padding-right"));
+    console.log(contentWidth);
+    const midWidth = contentWidth / 2;
     const images = document.querySelectorAll(".photoRight, .photoLeft");
     for (let i = 0; i < images.length; i++) {
       if (images[i].naturalWidth > midWidth) {
@@ -47,4 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   });
+
+  //Simple action to update my current age in intro paragraph over time
+  const introParagraph = document.getElementById("aboutMe");
+  if (introParagraph != null) {
+    const currentAge =
+      new Date(new Date() - new Date("10/17/1993")).getFullYear() - 1970;
+    introParagraph.innerHTML = introParagraph.innerHTML.replace(
+      "CURRENT_AGE",
+      currentAge.toString()
+    );
+  }
 });
